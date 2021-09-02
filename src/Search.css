@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+}
+
+#searchBlock {
+  background-color: #DDDDDD;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#searchBar {
+  width: 85%;
+  height: 50px;
+  padding-left: 10px;
+  outline: none;
+}
+
+#searchBtn {
+  height: 54px;
+  width: 54px;
+  background-color: #00A3FF;
+  cursor: pointer;
+  border: none;
+  cursor: pointer;
+  font-size: 35px;
+  color: white;
+}
