@@ -30,7 +30,7 @@ function Card({repo}) {
         <input 
           type="text"
           name="comment" 
-          placeholder="comment"
+          placeholder="комментарий к проекту"
         />
         <button type="submit">
           <i className="fas fa-pencil-alt"></i>
