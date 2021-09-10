@@ -9,6 +9,11 @@ function App() {
   const [error, setError] = React.useState(false)
 
   React.useEffect(() => {
+    const raw = localStorage.getItem("repos") || []
+    setRepos(JSON.parse(raw))
+  }, [])
+
+  React.useEffect(() => {
     if (!inputValue) {
       return
     }
@@ -31,6 +36,10 @@ function App() {
       })
     console.log(inputValue)
   }, [inputValue])
+
+  React.useEffect(() => {
+    localStorage.setItem("repos", JSON.stringify(repos))
+  }, [repos])
 
   return (
     <div>
